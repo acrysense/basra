@@ -22,49 +22,63 @@
 		<header class="header" id="header">
 			<div class="container">
 				<div class="header__wrapper">
+					<button class="hamburger" id="hamburger-toggle">
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+					</button>
 					<a href="#" class="header__logotype">
 						<img src="img/logotype.svg" width="263" height="46" alt="BASRA AMAZON">
 					</a>
+					<button class="c-search-trigger header__search-trigger">
+						<svg class="c-search-trigger__icon">
+							<use xlink:href="img/sprite.svg#icon-search"></use>
+						</svg>
+					</button>
 					<div class="header-search header__search">
-						<button class="c-catalog header-search__catalog">
-							<svg>
-								<use xlink:href="img/sprite.svg#icon-catalog"></use>
-							</svg>
-							<span>فهرس</span>
-						</button>
-						<form action="#" class="header-search__controls">
-							<input type="text" class="header-search__input" placeholder="البحث في الكتالوج">
-							<button class="header-search__btn">
-								<svg class="header-search__btn-icon">
-									<use xlink:href="img/sprite.svg#icon-search"></use>
+						<div class="header-search__wrapper">
+							<button class="c-catalog header-search__catalog">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-catalog"></use>
 								</svg>
+								<span>فهرس</span>
 							</button>
-						</form>
+							<form action="#" class="header-search__controls">
+								<input type="text" class="header-search__input" placeholder="البحث في الكتالوج">
+								<button class="header-search__btn">
+									<svg class="header-search__btn-icon">
+										<use xlink:href="img/sprite.svg#icon-search"></use>
+									</svg>
+								</button>
+							</form>
+						</div>
 					</div>
-					<ul class="header-controls header__controls">
-						<li class="header-controls__item">
-							<a href="#" class="header-controls__link">
-								<svg class="header-controls__icon">
-									<use xlink:href="img/sprite.svg#icon-user"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="header-controls__item">
-							<a href="#" class="header-controls__link">
-								<svg class="header-controls__icon">
-									<use xlink:href="img/sprite.svg#icon-like"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="header-controls__item">
-							<a href="#" class="header-controls__link">
-								<svg class="header-controls__icon">
-									<use xlink:href="img/sprite.svg#icon-basket"></use>
-								</svg>
-								<span class="header-controls__value">1</span>
-							</a>
-						</li>
-					</ul>
+					<div class="header-controls header__controls">
+						<ul class="header-controls__list">
+							<li class="header-controls__item">
+								<a href="#" class="header-controls__link">
+									<svg class="header-controls__icon">
+										<use xlink:href="img/sprite.svg#icon-user"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="header-controls__item">
+								<a href="#" class="header-controls__link">
+									<svg class="header-controls__icon">
+										<use xlink:href="img/sprite.svg#icon-like"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="header-controls__item">
+								<a href="#" class="header-controls__link">
+									<svg class="header-controls__icon">
+										<use xlink:href="img/sprite.svg#icon-basket"></use>
+									</svg>
+									<span class="header-controls__value">1</span>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<nav class="nav header__nav">
 					<ul class="nav__list">
@@ -118,6 +132,7 @@
 											</picture>
 										</div>
 									</div>
+									<div class="swiper-pagination"></div>
 								</div>
 								<div class="gallery-thumbs">
 									<div class="swiper-wrapper">
@@ -148,8 +163,10 @@
 							<div class="product__body">
 								<div class="product__prices">
 									<span class="product__discount">-10%</span>
-									<span class="product__old-price">1320 د.ع</span>
-									<span class="product__new-price">1200 د.ع</span>
+									<div class="product__prices-group">
+										<span class="product__old-price">1320 د.ع</span>
+										<span class="product__new-price">1200 د.ع</span>
+									</div>
 								</div>
 								<span class="product__elem">ماركة: PAYOT</span>
 								<span class="product__elem">نوع البشرة: لجميع الأنواع</span>
@@ -233,11 +250,11 @@
 										<article class="products__slide">
 											<a href="#" class="products__img">
 												<img src="img/product-01.png" width="95" height="216" alt="Image">
-												<buttonn class="products__like">
+												<button class="products__like">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-like-filled"></use>
 													</svg>
-												</buttonn>
+												</button>
 											</a>
 											<div class="products__body">
 												<div class="products__prices">
@@ -260,11 +277,11 @@
 										<article class="products__slide">
 											<a href="#" class="products__img">
 												<img src="img/product-01.png" width="95" height="216" alt="Image">
-												<buttonn class="products__like">
+												<button class="products__like">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-like-filled"></use>
 													</svg>
-												</buttonn>
+												</button>
 											</a>
 											<div class="products__body">
 												<div class="products__prices">
@@ -287,11 +304,11 @@
 										<article class="products__slide">
 											<a href="#" class="products__img">
 												<img src="img/product-01.png" width="95" height="216" alt="Image">
-												<buttonn class="products__like">
+												<button class="products__like">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-like-filled"></use>
 													</svg>
-												</buttonn>
+												</button>
 											</a>
 											<div class="products__body">
 												<div class="products__prices">
@@ -314,11 +331,11 @@
 										<article class="products__slide">
 											<a href="#" class="products__img">
 												<img src="img/product-01.png" width="95" height="216" alt="Image">
-												<buttonn class="products__like">
+												<button class="products__like">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-like-filled"></use>
 													</svg>
-												</buttonn>
+												</button>
 											</a>
 											<div class="products__body">
 												<div class="products__prices">
@@ -341,11 +358,11 @@
 										<article class="products__slide">
 											<a href="#" class="products__img">
 												<img src="img/product-01.png" width="95" height="216" alt="Image">
-												<buttonn class="products__like">
+												<button class="products__like">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-like-filled"></use>
 													</svg>
-												</buttonn>
+												</button>
 											</a>
 											<div class="products__body">
 												<div class="products__prices">
@@ -367,6 +384,7 @@
 								</div>
 							</div>
 						</div>
+						<a href="#" class="products__more btn btn--border btn--sm">أضف إلى السلة</a>
 					</div>
 				</div>
 			</section>
@@ -384,7 +402,7 @@
 							</a>
 						</div>
 						<div class="footer__group">
-							<a href="#" class="footer__link">عنوان المتجر</a>
+							<span class="footer__help">عنوان المتجر</span>
 							<h3 class="footer__title">بصرة امزون</h3>
 							<ul class="c-socnav footer__socnav">
 								<li class="c-socnav__item">
@@ -466,12 +484,14 @@
 					</div>
 					<div class="footer__block">
 						<div class="footer__group">
-							<a href="#" class="footer__app">
-								<img src="img/app-store.svg" width="144" height="48" alt="App Store">
-							</a>
-							<a href="#" class="footer__app">
-								<img src="img/google-play.svg" width="144" height="48" alt="App Store">
-							</a>
+							<div class="footer__app-btns">
+								<a href="#" class="footer__app">
+									<img src="img/app-store.svg" width="144" height="48" alt="App Store">
+								</a>
+								<a href="#" class="footer__app">
+									<img src="img/google-play.svg" width="144" height="48" alt="App Store">
+								</a>
+							</div>
 						</div>
 						<div class="footer__group">
 							<p class="footer__copyright"><span>سياسة الخصوصية</span></p>
