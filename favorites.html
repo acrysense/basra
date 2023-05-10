@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BASRA - Favorites</title>
+	<meta property="og:title" content="BASRA - Favorites">
+	<meta property="og:description" content="Description">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="BASRA - Favorites">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<button class="hamburger" id="hamburger-toggle">
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+					</button>
+					<a href="#" class="header__logotype">
+						<img src="img/logotype.svg" width="263" height="46" alt="BASRA AMAZON">
+					</a>
+					<button class="c-search-trigger header__search-trigger">
+						<svg class="c-search-trigger__icon">
+							<use xlink:href="img/sprite.svg#icon-search"></use>
+						</svg>
+					</button>
+					<div class="header-search header__search">
+						<div class="header-search__wrapper">
+							<button class="c-catalog header-search__catalog">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-catalog"></use>
+								</svg>
+								<span>فهرس</span>
+							</button>
+							<form action="#" class="header-search__controls">
+								<input type="text" class="header-search__input" placeholder="البحث في الكتالوج">
+								<button class="header-search__btn">
+									<svg class="header-search__btn-icon">
+										<use xlink:href="img/sprite.svg#icon-search"></use>
+									</svg>
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="header-controls header__controls">
+						<ul class="header-controls__list">
+							<li class="header-controls__item">
+								<a href="#" class="header-controls__link">
+									<svg class="header-controls__icon">
+										<use xlink:href="img/sprite.svg#icon-user"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="header-controls__item">
+								<a href="#" class="header-controls__link">
+									<svg class="header-controls__icon">
+										<use xlink:href="img/sprite.svg#icon-like"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="header-controls__item">
+								<a href="#" class="header-controls__link">
+									<svg class="header-controls__icon">
+										<use xlink:href="img/sprite.svg#icon-basket"></use>
+									</svg>
+									<span class="header-controls__value">1</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<nav class="nav header__nav">
+					<ul class="nav__list">
+						<li class="nav__item is--active">
+							<a href="#" class="nav__link">اتصل بنا</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">العلامات التجارية</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">مخزون</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">الشحن والدفع</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">جهات الاتصال</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- favorites -->
+			<section class="favorites" id="favorites">
+				<div class="container">
+					<div class="section-top">
+						<!-- breadcrumb -->
+						<div class="breadcrumb section-top__breadcrumb" aria-label="Breadcrumb">
+							<ol class="breadcrumb__list">
+								<li class="breadcrumb__item">
+									<a href="index.html" class="breadcrumb__link">بيت</a>
+								</li>
+								<li class="breadcrumb__item">
+									<a href="#" class="breadcrumb__link">المساحة الشخصية</a>
+								</li>
+								<li class="breadcrumb__item">
+									<a href="favorites.html" class="breadcrumb__link">المفضلة</a>
+								</li>
+							</ol>
+						</div>
+						<!-- end of breadcrumb -->
+						<h1 class="section-top__heading">المفضلة</h1>
+					</div>
+					<div class="favorites__wrapper">
+						<article class="favorites__item">
+							<button class="favorites__delete">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+							<picture class="favorites__img">
+								<img src="img/product-01.png" alt="Image">
+							</picture>
+							<div class="favorites__body">
+								<div class="favorites__prices">
+									<span class="favorites__new-price">315د.ع</span>
+									<span class="favorites__old-price">420 د.ع</span>
+									<span class="favorites__discount">-40 %</span>
+								</div>
+								<a href="#" class="favorites__title">Total Results</a>
+								<span class="favorites__help">Unbreak My Blonde</span>
+							</div>
+							<a href="#" class="favorites__btn btn btn--sm btn--grey">أضيف إلى عربة التسوق</a>
+						</article>
+						<article class="favorites__item">
+							<button class="favorites__delete">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+							<picture class="favorites__img">
+								<img src="img/product-02.png" alt="Image">
+							</picture>
+							<div class="favorites__body">
+								<div class="favorites__prices">
+									<span class="favorites__new-price">315د.ع</span>
+									<span class="favorites__old-price">420 د.ع</span>
+									<span class="favorites__discount">-40 %</span>
+								</div>
+								<a href="#" class="favorites__title">Total Results</a>
+								<span class="favorites__help">Unbreak My Blonde</span>
+							</div>
+							<a href="#" class="favorites__btn btn btn--sm">أضف إلى السلة</a>
+						</article>
+						<article class="favorites__item">
+							<button class="favorites__delete">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+							<picture class="favorites__img">
+								<img src="img/product-02.png" alt="Image">
+							</picture>
+							<div class="favorites__body">
+								<div class="favorites__prices">
+									<span class="favorites__new-price">315د.ع</span>
+									<span class="favorites__old-price">420 د.ع</span>
+									<span class="favorites__discount">-40 %</span>
+								</div>
+								<a href="#" class="favorites__title">Total Results</a>
+								<span class="favorites__help">Unbreak My Blonde</span>
+							</div>
+							<a href="#" class="favorites__btn btn btn--sm">أضف إلى السلة</a>
+						</article>
+						<article class="favorites__item">
+							<button class="favorites__delete">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+							<picture class="favorites__img">
+								<img src="img/product-02.png" alt="Image">
+							</picture>
+							<div class="favorites__body">
+								<div class="favorites__prices">
+									<span class="favorites__new-price">315د.ع</span>
+									<span class="favorites__old-price">420 د.ع</span>
+									<span class="favorites__discount">-40 %</span>
+								</div>
+								<a href="#" class="favorites__title">Total Results</a>
+								<span class="favorites__help">Unbreak My Blonde</span>
+							</div>
+							<a href="#" class="favorites__btn btn btn--sm">أضف إلى السلة</a>
+						</article>
+						<article class="favorites__item">
+							<button class="favorites__delete">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+							<picture class="favorites__img">
+								<img src="img/product-02.png" alt="Image">
+							</picture>
+							<div class="favorites__body">
+								<div class="favorites__prices">
+									<span class="favorites__new-price">315د.ع</span>
+									<span class="favorites__old-price">420 د.ع</span>
+									<span class="favorites__discount">-40 %</span>
+								</div>
+								<a href="#" class="favorites__title">Total Results</a>
+								<span class="favorites__help">Unbreak My Blonde</span>
+							</div>
+							<a href="#" class="favorites__btn btn btn--sm">أضف إلى السلة</a>
+						</article>
+						<article class="favorites__item">
+							<button class="favorites__delete">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+							<picture class="favorites__img">
+								<img src="img/product-02.png" alt="Image">
+							</picture>
+							<div class="favorites__body">
+								<div class="favorites__prices">
+									<span class="favorites__new-price">315د.ع</span>
+									<span class="favorites__old-price">420 د.ع</span>
+									<span class="favorites__discount">-40 %</span>
+								</div>
+								<a href="#" class="favorites__title">Total Results</a>
+								<span class="favorites__help">Unbreak My Blonde</span>
+							</div>
+							<a href="#" class="favorites__btn btn btn--sm">أضف إلى السلة</a>
+						</article>
+						<article class="favorites__item">
+							<button class="favorites__delete">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+							<picture class="favorites__img">
+								<img src="img/product-02.png" alt="Image">
+							</picture>
+							<div class="favorites__body">
+								<div class="favorites__prices">
+									<span class="favorites__new-price">315د.ع</span>
+									<span class="favorites__old-price">420 د.ع</span>
+									<span class="favorites__discount">-40 %</span>
+								</div>
+								<a href="#" class="favorites__title">Total Results</a>
+								<span class="favorites__help">Unbreak My Blonde</span>
+							</div>
+							<a href="#" class="favorites__btn btn btn--sm">أضف إلى السلة</a>
+						</article>
+						<article class="favorites__item">
+							<button class="favorites__delete">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+							<picture class="favorites__img">
+								<img src="img/product-02.png" alt="Image">
+							</picture>
+							<div class="favorites__body">
+								<div class="favorites__prices">
+									<span class="favorites__new-price">315د.ع</span>
+									<span class="favorites__old-price">420 د.ع</span>
+									<span class="favorites__discount">-40 %</span>
+								</div>
+								<a href="#" class="favorites__title">Total Results</a>
+								<span class="favorites__help">Unbreak My Blonde</span>
+							</div>
+							<a href="#" class="favorites__btn btn btn--sm">أضف إلى السلة</a>
+						</article>
+					</div>
+				</div>
+			</section>
+			<!-- end of favorites -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__block">
+						<div class="footer__group">
+							<a href="index.html" class="footer__logotype">
+								<img src="img/logotype-white.svg" alt="BASRA AMAZON">
+							</a>
+						</div>
+						<div class="footer__group">
+							<span class="footer__help">عنوان المتجر</span>
+							<h3 class="footer__title">بصرة امزون</h3>
+							<ul class="c-socnav footer__socnav">
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<svg class="c-socnav__icon">
+											<use xlink:href="img/sprite.svg#icon-instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<svg class="c-socnav__icon">
+											<use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<svg class="c-socnav__icon">
+											<use xlink:href="img/sprite.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__block">
+						<div class="footer__group">
+							<p class="footer__info">
+								<span>اكتب لنا:</span>
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-email"></use>
+								</svg>
+							</p>
+							<a href="mailto:basraamazon@gmail.com" class="footer__contact">basraamazon@gmail.com</a>
+						</div>
+						<div class="footer__group">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">فهرس</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">مخزون</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">العلامات التجارية</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">جديد</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__block">
+						<div class="footer__group">
+							<p class="footer__info">
+								<span>اتصل من 10:00 إلى 22:00</span>
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-phone"></use>
+								</svg>
+							</p>
+							<a href="tel:07807460690" class="footer__contact">07807460690</a>
+							<a href="tel:07703152690" class="footer__contact">07703152690</a>
+							<a href="tel:07715046655" class="footer__contact">07715046655</a>
+						</div>
+						<div class="footer__group">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">الشحن والدفع</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">تطبيق جوال</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">جهات الاتصال</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__block">
+						<div class="footer__group">
+							<div class="footer__app-btns">
+								<a href="#" class="footer__app">
+									<img src="img/app-store.svg" width="144" height="48" alt="App Store">
+								</a>
+								<a href="#" class="footer__app">
+									<img src="img/google-play.svg" width="144" height="48" alt="App Store">
+								</a>
+							</div>
+						</div>
+						<div class="footer__group">
+							<p class="footer__copyright"><span>سياسة الخصوصية</span></p>
+							<p class="footer__copyright">© 2023 Basra Amazon. <span>كل الحقوق محفوظة</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
