@@ -165,7 +165,8 @@
 						</div>
 						<div class="contacts__left">
 							<div class="contacts__map">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.565690640851!2d47.8276501755549!3d30.50503939660131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fc49759076ba93d%3A0xaa04c6384096b9e7!2sBasra%20Amazon!5e0!3m2!1suk!2sua!4v1683720117228!5m2!1suk!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								<div id="map"></div>
+								<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.565690640851!2d47.8276501755549!3d30.50503939660131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fc49759076ba93d%3A0xaa04c6384096b9e7!2sBasra%20Amazon!5e0!3m2!1suk!2sua!4v1683720117228!5m2!1suk!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 							</div>
 						</div>
 					</div>
@@ -290,6 +291,151 @@
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+	<script>
+		function initMap() {
+			var coordinates = {
+					lat: 47.212325,
+					lng: 38.933663
+				},
+
+				map = new google.maps.Map(document.getElementById('map'), {
+					center: coordinates
+				});
+
+			marker = new google.maps.Marker({
+				position: coordinates,
+				map: map
+			});
+		}
+
+		var styles = [{
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "#f5f5f5"
+				}]
+			},
+			{
+				"elementType": "labels.icon",
+				"stylers": [{
+					"visibility": "off"
+				}]
+			},
+			{
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#616161"
+				}]
+			},
+			{
+				"elementType": "labels.text.stroke",
+				"stylers": [{
+					"color": "#f5f5f5"
+				}]
+			},
+			{
+				"featureType": "administrative.land_parcel",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#bdbdbd"
+				}]
+			},
+			{
+				"featureType": "poi",
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "#eeeeee"
+				}]
+			},
+			{
+				"featureType": "poi",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#757575"
+				}]
+			},
+			{
+				"featureType": "poi.park",
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "#e5e5e5"
+				}]
+			},
+			{
+				"featureType": "poi.park",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#9e9e9e"
+				}]
+			},
+			{
+				"featureType": "road",
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "#ffffff"
+				}]
+			},
+			{
+				"featureType": "road.arterial",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#757575"
+				}]
+			},
+			{
+				"featureType": "road.highway",
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "#dadada"
+				}]
+			},
+			{
+				"featureType": "road.highway",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#616161"
+				}]
+			},
+			{
+				"featureType": "road.local",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#9e9e9e"
+				}]
+			},
+			{
+				"featureType": "transit.line",
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "#e5e5e5"
+				}]
+			},
+			{
+				"featureType": "transit.station",
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "#eeeeee"
+				}]
+			},
+			{
+				"featureType": "water",
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "#c9c9c9"
+				}]
+			},
+			{
+				"featureType": "water",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#9e9e9e"
+				}]
+			}
+		]
+		map.setOptions({
+			styles: styles
+		});
+	</script>
 </body>
 
 </html>
