@@ -291,22 +291,28 @@
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4lrpe6uAtfOR_15170GIkVIBwi1rp79w&callback=initMap">
+	</script>
 	<script>
 		function initMap() {
-			var coordinates = {
-					lat: 47.212325,
-					lng: 38.933663
+			// var coordinates = {lat: 47.212325, lng: 38.933663},
+
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: {
+					lat: -34.397,
+					lng: 150.644
 				},
-
-				map = new google.maps.Map(document.getElementById('map'), {
-					center: coordinates
-				});
-
-			marker = new google.maps.Marker({
-				position: coordinates,
-				map: map
+				zoom: 8
 			});
+
+			// map = new google.maps.Map(document.getElementById('map'), {
+			//     center: coordinates
+			// });
+
+			// marker = new google.maps.Marker({
+			//     position: coordinates,
+			//     map: map
+			// });
 		}
 
 		var styles = [{
@@ -432,9 +438,8 @@
 				}]
 			}
 		]
-		map.setOptions({
-			styles: styles
-		});
+
+		// map.setOptions({styles: styles});
 	</script>
 </body>
 

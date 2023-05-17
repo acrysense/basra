@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BASRA - 404</title>
-	<meta property="og:title" content="BASRA - 404">
+	<title>BASRA - Profile</title>
+	<meta property="og:title" content="BASRA - Profile">
 	<meta property="og:description" content="Description">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="BASRA - 404">
+	<meta property="og:site_name" content="BASRA - Profile">
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -104,24 +104,112 @@
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- section plug -->
-			<section class="section-plug" id="section-plug">
+			<!-- profile -->
+			<section class="profile" id="profile">
 				<div class="container">
-					<div class="section-plug__wrapper">
-						<picture class="section-plug__img">
-							<img src="img/error.svg" alt="Image">
-						</picture>
-						<div class="section-plug__body">
-							<h3 class="section-plug__title">تم الدفع بنجاح</h3>
-							<p class="section-plug__description">
-								الصفحة التي تبحث عنها غير موجودة<br>
-								أم أنه تم نقله إلى عنوان مختلف؟</p>
-							<a href="#" class="section-plug__btn btn">عد الى الصفحة الرئيسية</a>
+					<div class="section-top">
+						<!-- breadcrumb -->
+						<div class="breadcrumb section-top__breadcrumb" aria-label="Breadcrumb">
+							<ol class="breadcrumb__list">
+								<li class="breadcrumb__item">
+									<a href="index.html" class="breadcrumb__link">بيت</a>
+								</li>
+								<li class="breadcrumb__item">
+									<a href="profile.html" class="breadcrumb__link">المساحة الشخصية</a>
+								</li>
+							</ol>
 						</div>
+						<!-- end of breadcrumb -->
+						<h1 class="section-top__heading">المساحة الشخصية</h1>
+					</div>
+					<div class="profile__wrap">
+						<div class="profile__sidebar">
+							<ul class="profile__list">
+								<li class="profile__item is--active">
+									<a href="profile.html" class="profile__link">
+										<span>معلومات شخصية</span>
+									</a>
+								</li>
+								<li class="profile__item">
+									<a href="#" class="profile__link">
+										<span>طلبات</span>
+									</a>
+								</li>
+								<li class="profile__item">
+									<a href="#" class="profile__link">
+										<span>المكافآت</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-diamond"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="profile__item">
+									<a href="#" class="profile__link">
+										<span>المفضلة</span>
+									</a>
+								</li>
+								<li class="profile__item">
+									<a href="#" class="profile__link">
+										<span>خروج</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-exit"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<form action="#" class="profile__form profile-form">
+							<div class="input-group profile-form__input">
+								<input type="text" class="input-group__input" placeholder="اسم">
+								<span class="input-group__error">Error</span>
+							</div>
+							<div class="input-group profile-form__input">
+								<input type="text" class="input-group__input" placeholder="اسم العائلة">
+								<span class="input-group__error">Error</span>
+							</div>
+							<div class="profile-form__checkboxes">
+								<label for="sex-01" class="circle-checkbox profile-form__checkbox">
+									<input type="radio" id="sex-01" class="circle-checkbox__input" name="sex">
+									<div class="circle-checkbox__group">
+										<span class="circle-checkbox__icon"></span>
+										<span class="circle-checkbox__title">ذكر</span>
+									</div>
+								</label>
+								<label for="sex-02" class="circle-checkbox profile-form__checkbox">
+									<input type="radio" id="sex-02" class="circle-checkbox__input" name="sex">
+									<div class="circle-checkbox__group">
+										<span class="circle-checkbox__icon"></span>
+										<span class="circle-checkbox__title">أنثى</span>
+									</div>
+								</label>
+								<label for="sex-03" class="circle-checkbox profile-form__checkbox">
+									<input type="radio" id="sex-03" class="circle-checkbox__input" name="sex">
+									<div class="circle-checkbox__group">
+										<span class="circle-checkbox__icon"></span>
+										<span class="circle-checkbox__title">غير محدد</span>
+									</div>
+								</label>
+							</div>
+							<div class="input-group profile-form__input">
+								<input type="text" class="input-group__input" placeholder="تاريخ الميلاد">
+								<span class="input-group__error">Error</span>
+							</div>
+							<div class="input-group profile-form__input">
+								<input type="email" class="input-group__input" placeholder="بريد إلكتروني">
+								<span class="input-group__error">Error</span>
+							</div>
+							<div class="input-group profile-form__input">
+								<input type="tel" class="input-group__input" placeholder="هاتف">
+								<span class="input-group__error">Error</span>
+							</div>
+							<div class="profile-form__buttons">
+								<button class="profile-form__btn btn">يحفظ</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</section>
-			<!-- end of section plug -->
+			<!-- end of profile -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
