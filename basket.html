@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BASRA - Basket</title>
+	<meta property="og:title" content="BASRA - Basket">
+	<meta property="og:description" content="Description">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="BASRA - Basket">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<button class="hamburger" id="hamburger-toggle">
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+					</button>
+					<a href="#" class="header__logotype">
+						<img src="img/logotype.svg" width="263" height="46" alt="BASRA AMAZON">
+					</a>
+					<button class="c-search-trigger header__search-trigger">
+						<svg class="c-search-trigger__icon">
+							<use xlink:href="img/sprite.svg#icon-search"></use>
+						</svg>
+					</button>
+					<div class="header-search header__search">
+						<div class="header-search__wrapper">
+							<button class="c-catalog header-search__catalog">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-catalog"></use>
+								</svg>
+								<span>فهرس</span>
+							</button>
+							<form action="#" class="header-search__controls">
+								<input type="text" class="header-search__input" placeholder="البحث في الكتالوج">
+								<button class="header-search__btn">
+									<svg class="header-search__btn-icon">
+										<use xlink:href="img/sprite.svg#icon-search"></use>
+									</svg>
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="header-controls header__controls">
+						<ul class="header-controls__list">
+							<li class="header-controls__item">
+								<a href="#" class="header-controls__link">
+									<svg class="header-controls__icon">
+										<use xlink:href="img/sprite.svg#icon-user"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="header-controls__item">
+								<a href="#" class="header-controls__link">
+									<svg class="header-controls__icon">
+										<use xlink:href="img/sprite.svg#icon-like"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="header-controls__item">
+								<a href="#" class="header-controls__link">
+									<svg class="header-controls__icon">
+										<use xlink:href="img/sprite.svg#icon-basket"></use>
+									</svg>
+									<span class="header-controls__value">1</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<nav class="nav header__nav">
+					<ul class="nav__list">
+						<li class="nav__item is--active">
+							<a href="#" class="nav__link">اتصل بنا</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">العلامات التجارية</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">مخزون</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">الشحن والدفع</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">جهات الاتصال</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- basket -->
+			<section class="basket" id="basket">
+				<div class="container">
+					<div class="section-top">
+						<!-- is--first | is--second | is--third -->
+						<div class="section-top__stages c-stages is--first">
+							<div class="c-stages__wrapper">
+								<div class="c-stages__item">
+									<span class="c-stages__title">سلة</span>
+								</div>
+								<div class="c-stages__item">
+									<span class="c-stages__title">توصيل</span>
+								</div>
+								<div class="c-stages__item">
+									<span class="c-stages__title">قسط</span>
+								</div>
+							</div>
+						</div>
+						<h1 class="section-top__heading">سلة</h1>
+						<p class="section-top__description">يوجد 3 عناصر في عربة التسوق</p>
+					</div>
+					<div class="basket__wrap">
+						<div class="basket__wrapper">
+							<div class="basket__item">
+								<button class="basket__delete">
+									<svg class="basket__delete-icon">
+										<use xlink:href="img/sprite.svg#icon-close"></use>
+									</svg>
+								</button>
+								<picture class="basket__img">
+									<img src="img/product-01.png" alt="Image">
+								</picture>
+								<div class="basket__info basket__info--main">
+									<span class="basket__help">L'Oreal Paris</span>
+									<a href="#" class="basket__name">Perfect Skin 20+</a>
+									<span class="basket__help">كريم النهار لعمر 20+ لتقليل الخطوط الدقيقة وتفتيح لون البشرة</span>
+									<span class="basket__help">الحجم: 200 مل</span>
+								</div>
+								<div class="c-quantity basket__quantity">
+									<button class="c-quantity__btn c-quantity__btn--minus">
+										<svg class="c-quantity__icon">
+											<use xlink:href="img/sprite.svg#icon-minus"></use>
+										</svg>
+									</button>
+									<input type="number" class="c-quantity__value" value="1">
+									<button class="c-quantity__btn c-quantity__btn--plus">
+										<svg class="c-quantity__icon">
+											<use xlink:href="img/sprite.svg#icon-plus"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="basket__info basket__info--details">
+									<span class="basket__discount">خصم 200 د.ع</span>
+									<div class="basket__prices">
+										<span class="basket__price basket__price--old">1500 د.ع</span>
+										<span class="basket__price basket__price--new">1300 د.ع</span>
+									</div>
+									<div class="basket__prices-solo">
+										<span class="basket__help">سعر قطعة واحدة</span>
+										<span class="basket__price basket__price--sm">650 د.ع </span>
+									</div>
+								</div>
+							</div>
+							<div class="basket__item">
+								<button class="basket__delete">
+									<svg class="basket__delete-icon">
+										<use xlink:href="img/sprite.svg#icon-close"></use>
+									</svg>
+								</button>
+								<picture class="basket__img">
+									<img src="img/product-01.png" alt="Image">
+								</picture>
+								<div class="basket__info basket__info--main">
+									<span class="basket__help">L'Oreal Paris</span>
+									<a href="#" class="basket__name">Perfect Skin 20+</a>
+									<span class="basket__help">كريم النهار لعمر 20+ لتقليل الخطوط الدقيقة وتفتيح لون البشرة</span>
+									<span class="basket__help">الحجم: 200 مل</span>
+								</div>
+								<div class="c-quantity basket__quantity">
+									<button class="c-quantity__btn c-quantity__btn--minus">
+										<svg class="c-quantity__icon">
+											<use xlink:href="img/sprite.svg#icon-minus"></use>
+										</svg>
+									</button>
+									<input type="number" class="c-quantity__value" value="1">
+									<button class="c-quantity__btn c-quantity__btn--plus">
+										<svg class="c-quantity__icon">
+											<use xlink:href="img/sprite.svg#icon-plus"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="basket__info basket__info--details">
+									<span class="basket__discount">خصم 200 د.ع</span>
+									<div class="basket__prices">
+										<span class="basket__price basket__price--old">1500 د.ع</span>
+										<span class="basket__price basket__price--new">1300 د.ع</span>
+									</div>
+									<div class="basket__prices-solo">
+										<span class="basket__help">سعر قطعة واحدة</span>
+										<span class="basket__price basket__price--sm">650 د.ع </span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="basket__details">
+							<div class="basket__right">
+								<h3 class="basket__title basket__title--icon">برنامج المكافآت</h3>
+								<span class="basket__help">دعونا نحصل على مكافآت: 21</span>
+								<span class="basket__help">(يمكن استبدال نقاط المكافآت عند الخروج)</span>
+							</div>
+							<div class="basket__left">
+								<h3 class="basket__title">الإجمالي: 2600 د.ع</h3>
+								<span class="basket__help">البضائع (4): 2600 د.ع</span>
+								<span class="basket__help">كان الخصم الخاص بك: 40 د.ع</span>
+							</div>
+						</div>
+						<a href="#" class="basket__btn btn">يأمر</a>
+					</div>
+				</div>
+			</section>
+			<!-- end of basket -->
+			<!-- products -->
+			<section class="products products--border" id="products">
+				<div class="container">
+					<div class="products__slider">
+						<div class="products__top">
+							<h2 class="products__heading">عروض الشهر</h2>
+							<div class="swiper-buttons products__buttons">
+								<button class="swiper-button-next" aria-label="Next">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</button>
+								<button class="swiper-button-prev" aria-label="Prev">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="products__slider-wrapper">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<article class="products__slide">
+											<a href="#" class="products__img">
+												<img src="img/product-01.png" width="95" height="216" alt="Image">
+												<button class="products__like">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+													</svg>
+												</button>
+											</a>
+											<div class="products__body">
+												<div class="products__prices">
+													<span class="products__new-price">315د.ع</span>
+													<span class="products__old-price">420 د.ع</span>
+													<span class="products__discount">-25 %</span>
+												</div>
+												<a href="#" class="products__title">Total Results</a>
+												<span class="products__help">Unbreak My Blonde</span>
+											</div>
+											<a href="#" class="products__btn btn btn--sm btn--grey">أضف إلى العربة</a>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="products__slide">
+											<a href="#" class="products__img">
+												<img src="img/product-01.png" width="95" height="216" alt="Image">
+												<button class="products__like">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+											</a>
+											<div class="products__body">
+												<div class="products__prices">
+													<span class="products__new-price">315د.ع</span>
+													<span class="products__old-price">420 د.ع</span>
+													<span class="products__discount">-25 %</span>
+												</div>
+												<a href="#" class="products__title">Total Results</a>
+												<span class="products__help">Unbreak My Blonde</span>
+											</div>
+											<a href="#" class="products__btn btn btn--sm">أضف إلى السلة</a>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="products__slide">
+											<a href="#" class="products__img">
+												<img src="img/product-01.png" width="95" height="216" alt="Image">
+												<button class="products__like">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+											</a>
+											<div class="products__body">
+												<div class="products__prices">
+													<span class="products__new-price">315د.ع</span>
+													<span class="products__old-price">420 د.ع</span>
+													<span class="products__discount">-25 %</span>
+												</div>
+												<a href="#" class="products__title">Total Results</a>
+												<span class="products__help">Unbreak My Blonde</span>
+											</div>
+											<a href="#" class="products__btn btn btn--sm">أضف إلى السلة</a>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="products__slide">
+											<a href="#" class="products__img">
+												<img src="img/product-01.png" width="95" height="216" alt="Image">
+												<button class="products__like">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+											</a>
+											<div class="products__body">
+												<div class="products__prices">
+													<span class="products__new-price">315د.ع</span>
+													<span class="products__old-price">420 د.ع</span>
+													<span class="products__discount">-25 %</span>
+												</div>
+												<a href="#" class="products__title">Total Results</a>
+												<span class="products__help">Unbreak My Blonde</span>
+											</div>
+											<a href="#" class="products__btn btn btn--sm">أضف إلى السلة</a>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="products__slide">
+											<a href="#" class="products__img">
+												<img src="img/product-01.png" width="95" height="216" alt="Image">
+												<button class="products__like">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+											</a>
+											<div class="products__body">
+												<div class="products__prices">
+													<span class="products__new-price">315د.ع</span>
+													<span class="products__old-price">420 د.ع</span>
+													<span class="products__discount">-25 %</span>
+												</div>
+												<a href="#" class="products__title">Total Results</a>
+												<span class="products__help">Unbreak My Blonde</span>
+											</div>
+											<a href="#" class="products__btn btn btn--sm">أضف إلى السلة</a>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="products__more btn btn--border btn--sm">أضف إلى السلة</a>
+					</div>
+				</div>
+			</section>
+			<!-- end of products -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__block">
+						<div class="footer__group">
+							<a href="index.html" class="footer__logotype">
+								<img src="img/logotype-white.svg" alt="BASRA AMAZON">
+							</a>
+						</div>
+						<div class="footer__group">
+							<span class="footer__help">عنوان المتجر</span>
+							<h3 class="footer__title">بصرة امزون</h3>
+							<ul class="c-socnav footer__socnav">
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<svg class="c-socnav__icon">
+											<use xlink:href="img/sprite.svg#icon-instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<svg class="c-socnav__icon">
+											<use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<svg class="c-socnav__icon">
+											<use xlink:href="img/sprite.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__block">
+						<div class="footer__group">
+							<p class="footer__info">
+								<span>اكتب لنا:</span>
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-email"></use>
+								</svg>
+							</p>
+							<a href="mailto:basraamazon@gmail.com" class="footer__contact">basraamazon@gmail.com</a>
+						</div>
+						<div class="footer__group">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">فهرس</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">مخزون</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">العلامات التجارية</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">جديد</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__block">
+						<div class="footer__group">
+							<p class="footer__info">
+								<span>اتصل من 10:00 إلى 22:00</span>
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-phone"></use>
+								</svg>
+							</p>
+							<a href="tel:07807460690" class="footer__contact">07807460690</a>
+							<a href="tel:07703152690" class="footer__contact">07703152690</a>
+							<a href="tel:07715046655" class="footer__contact">07715046655</a>
+						</div>
+						<div class="footer__group">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">الشحن والدفع</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">تطبيق جوال</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">جهات الاتصال</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__block">
+						<div class="footer__group">
+							<div class="footer__app-btns">
+								<a href="#" class="footer__app">
+									<img src="img/app-store.svg" width="144" height="48" alt="App Store">
+								</a>
+								<a href="#" class="footer__app">
+									<img src="img/google-play.svg" width="144" height="48" alt="App Store">
+								</a>
+							</div>
+						</div>
+						<div class="footer__group">
+							<p class="footer__copyright"><span>سياسة الخصوصية</span></p>
+							<p class="footer__copyright">© 2023 Basra Amazon. <span>كل الحقوق محفوظة</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
