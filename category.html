@@ -19,7 +19,7 @@
 	<!-- wrapper -->
 	<div class="wrapper">
 		<!-- header -->
-		<header class="header" id="header">
+		<header class="header header--transparent" id="header">
 			<div class="container">
 				<div class="header__wrapper">
 					<button class="hamburger" id="hamburger-toggle">
@@ -28,7 +28,7 @@
 						<span class="hamburger__inner"></span>
 					</button>
 					<a href="#" class="header__logotype">
-						<img src="img/logotype.svg" width="263" height="46" alt="BASRA AMAZON">
+						<img src="img/logotype-white.svg" width="263" height="46" alt="BASRA AMAZON">
 					</a>
 					<button class="c-search-trigger header__search-trigger">
 						<svg class="c-search-trigger__icon">
@@ -104,6 +104,355 @@
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
+			<!-- category main -->
+			<section class="category-main" id="category-main">
+				<div class="container">
+					<picture class="category-main__bg">
+						<source srcset="img/category-bg.jpg" media="(min-width: 1024px)">
+						<img src="img/category-bg-mobile.jpg" alt="Image">
+					</picture>
+					<div class="category-main__wrapper">
+						<div class="section-top">
+							<!-- breadcrumb -->
+							<div class="breadcrumb section-top__breadcrumb" aria-label="Breadcrumb">
+								<ol class="breadcrumb__list">
+									<li class="breadcrumb__item">
+										<a href="index.html" class="breadcrumb__link">بيت</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="#" class="breadcrumb__link">فهرس</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="category.html" class="breadcrumb__link">منتجات الشعر</a>
+									</li>
+								</ol>
+							</div>
+							<!-- end of breadcrumb -->
+							<h1 class="section-top__heading section-top__heading--right">منتجات الشعر</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of category main -->
+			<!-- categories -->
+			<section class="categories" id="categories">
+				<div class="container">
+					<div class="categories__wrap">
+						<div class="categories__right">
+							<div class="c-sort categories__sort">
+								<ul class="c-sort__list">
+									<li class="c-sort__item is--active">
+										<button class="c-sort__button">الشامبو</button>
+									</li>
+									<li class="c-sort__item">
+										<button class="c-sort__button">مكيفات وبلسم</button>
+									</li>
+									<li class="c-sort__item">
+										<button class="c-sort__button">زرع وتصفيف</button>
+									</li>
+									<li class="c-sort__item">
+										<button class="c-sort__button">الصناديق الخاصة</button>
+									</li>
+									<li class="c-sort__item">
+										<button class="c-sort__button">تلوين</button>
+									</li>
+									<li class="c-sort__item">
+										<button class="c-sort__button">إكسسوارات الشعر</button>
+									</li>
+									<li class="c-sort__item">
+										<button class="c-sort__button">مستحضرات التجميل المهنية للشعر</button>
+									</li>
+									<li class="c-sort__item">
+										<button class="c-sort__button">أطفال</button>
+									</li>
+									<li class="c-sort__item">
+										<button class="c-sort__button">عطر الشعر</button>
+									</li>
+								</ul>
+							</div>
+							<div class="categories__inner">
+								<div class="filter categories__filter is--open">
+									<button class="filter__trigger">
+										<span>منقي</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-caret-sm"></use>
+										</svg>
+									</button>
+									<div class="filter__dropdown" style="display: block">
+										<div class="filter__dropdown-scroll">
+											<div class="filter__top">
+												<button class="filter__close">
+													<span>منقي</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-arrow-back"></use>
+													</svg>
+												</button>
+											</div>
+											<div class="filter__main">
+												<div class="filter__block">
+													<h4 class="filter__heading">سعر</h4>
+													<div class="filter__range">
+														<div class="filter__inner">
+															<input type="number" id="range-money-max" class="range-input filter__input filter__input--max" placeholder="1000">
+															<input type="number" id="range-money-min" class="range-input filter__input filter__input--min" placeholder="10000">
+														</div>
+														<div class="filter__range-slider" data-range-start="1000" data-range-end="10000" data-range-min="1000" data-range-max="10000"></div>
+													</div>
+												</div>
+												<div class="filter__block">
+													<h4 class="filter__heading">ماركة</h4>
+													<div class="filter__scroll" data-simplebar>
+														<div class="filter__scroll-container">
+															<div class="filter__checkboxes">
+																<label for="brand-01" class="circle-checkbox filter__checkbox">
+																	<input type="checkbox" id="brand-01" class="circle-checkbox__input" name="brand">
+																	<div class="circle-checkbox__group">
+																		<span class="circle-checkbox__icon"></span>
+																		<span class="circle-checkbox__title">اسم</span>
+																	</div>
+																</label>
+																<label for="brand-02" class="circle-checkbox filter__checkbox">
+																	<input type="checkbox" id="brand-02" class="circle-checkbox__input" name="brand">
+																	<div class="circle-checkbox__group">
+																		<span class="circle-checkbox__icon"></span>
+																		<span class="circle-checkbox__title">اسم</span>
+																	</div>
+																</label>
+																<label for="brand-03" class="circle-checkbox filter__checkbox">
+																	<input type="checkbox" id="brand-03" class="circle-checkbox__input" name="brand">
+																	<div class="circle-checkbox__group">
+																		<span class="circle-checkbox__icon"></span>
+																		<span class="circle-checkbox__title">اسم</span>
+																	</div>
+																</label>
+																<label for="brand-04" class="circle-checkbox filter__checkbox">
+																	<input type="checkbox" id="brand-04" class="circle-checkbox__input" name="brand">
+																	<div class="circle-checkbox__group">
+																		<span class="circle-checkbox__icon"></span>
+																		<span class="circle-checkbox__title">اسم</span>
+																	</div>
+																</label>
+																<label for="brand-05" class="circle-checkbox filter__checkbox">
+																	<input type="checkbox" id="brand-05" class="circle-checkbox__input" name="brand">
+																	<div class="circle-checkbox__group">
+																		<span class="circle-checkbox__icon"></span>
+																		<span class="circle-checkbox__title">اسم</span>
+																	</div>
+																</label>
+																<label for="brand-06" class="circle-checkbox filter__checkbox">
+																	<input type="checkbox" id="brand-06" class="circle-checkbox__input" name="brand">
+																	<div class="circle-checkbox__group">
+																		<span class="circle-checkbox__icon"></span>
+																		<span class="circle-checkbox__title">اسم</span>
+																	</div>
+																</label>
+																<label for="brand-07" class="circle-checkbox filter__checkbox">
+																	<input type="checkbox" id="brand-07" class="circle-checkbox__input" name="brand">
+																	<div class="circle-checkbox__group">
+																		<span class="circle-checkbox__icon"></span>
+																		<span class="circle-checkbox__title">اسم</span>
+																	</div>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="filter__block">
+													<h4 class="filter__heading">جنس</h4>
+													<div class="filter__scroll">
+														<div class="filter__scroll-container">
+															<div class="filter__checkboxes">
+																<label for="sex-01" class="circle-checkbox filter__checkbox">
+																	<input type="checkbox" id="sex-01" class="circle-checkbox__input" name="sex">
+																	<div class="circle-checkbox__group">
+																		<span class="circle-checkbox__icon"></span>
+																		<span class="circle-checkbox__title">للرجال</span>
+																	</div>
+																</label>
+																<label for="sex-02" class="circle-checkbox filter__checkbox">
+																	<input type="checkbox" id="sex-02" class="circle-checkbox__input" name="sex">
+																	<div class="circle-checkbox__group">
+																		<span class="circle-checkbox__icon"></span>
+																		<span class="circle-checkbox__title">للنساء</span>
+																	</div>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="filter__block">
+													<h4 class="filter__heading">لمن</h4>
+													<div class="filter__scroll">
+														<div class="filter__scroll-container">
+															<div class="filter__checkboxes">
+																<label for="for-01" class="circle-checkbox filter__checkbox">
+																	<input type="checkbox" id="for-01" class="circle-checkbox__input" name="for">
+																	<div class="circle-checkbox__group">
+																		<span class="circle-checkbox__icon"></span>
+																		<span class="circle-checkbox__title">للبالغين</span>
+																	</div>
+																</label>
+																<label for="for-02" class="circle-checkbox filter__checkbox">
+																	<input type="checkbox" id="for-02" class="circle-checkbox__input" name="for">
+																	<div class="circle-checkbox__group">
+																		<span class="circle-checkbox__icon"></span>
+																		<span class="circle-checkbox__title">للأطفال</span>
+																	</div>
+																</label>
+																<label for="for-03" class="circle-checkbox filter__checkbox">
+																	<input type="checkbox" id="for-03" class="circle-checkbox__input" name="for">
+																	<div class="circle-checkbox__group">
+																		<span class="circle-checkbox__icon"></span>
+																		<span class="circle-checkbox__title">للجميع</span>
+																	</div>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="filter__bottom">
+												<button class="filter__btn btn btn--border-dark">تطبيق المرشحات</button>
+												<button class="filter__clear">إعادة تعيين المرشحات</button>
+											</div>
+										</div>
+									</div>
+									<div class="filter__overlay"></div>
+								</div>
+								<div class="categories__select categories__select--mobile"></div>
+							</div>
+						</div>
+						<div class="categories__left">
+							<div class="categories__top">
+								<div class="categories__select categories__select--desktop"></div>
+							</div>
+							<div class="categories__wrapper">
+								<article class="categories__item">
+									<button class="categories__like">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+										</svg>
+									</button>
+									<picture class="categories__img">
+										<img src="img/product-01.png" alt="Image">
+									</picture>
+									<div class="categories__body">
+										<div class="categories__prices">
+											<span class="categories__new-price">315د.ع</span>
+											<span class="categories__old-price">420 د.ع</span>
+											<span class="categories__discount">-40 %</span>
+										</div>
+										<a href="#" class="categories__title">Total Results</a>
+										<span class="categories__help">Unbreak My Blonde</span>
+									</div>
+									<a href="#" class="categories__btn btn btn--sm">أضف إلى السلة</a>
+								</article>
+								<article class="categories__item">
+									<button class="categories__like">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+										</svg>
+									</button>
+									<picture class="categories__img">
+										<img src="img/product-02.png" alt="Image">
+									</picture>
+									<div class="categories__body">
+										<div class="categories__prices">
+											<span class="categories__new-price">315د.ع</span>
+											<span class="categories__old-price">420 د.ع</span>
+											<span class="categories__discount">-40 %</span>
+										</div>
+										<a href="#" class="categories__title">Total Results</a>
+										<span class="categories__help">Unbreak My Blonde</span>
+									</div>
+									<a href="#" class="categories__btn btn btn--sm">أضف إلى السلة</a>
+								</article>
+								<article class="categories__item">
+									<button class="categories__like">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+										</svg>
+									</button>
+									<picture class="categories__img">
+										<img src="img/product-02.png" alt="Image">
+									</picture>
+									<div class="categories__body">
+										<div class="categories__prices">
+											<span class="categories__new-price">315د.ع</span>
+											<span class="categories__old-price">420 د.ع</span>
+											<span class="categories__discount">-40 %</span>
+										</div>
+										<a href="#" class="categories__title">Total Results</a>
+										<span class="categories__help">Unbreak My Blonde</span>
+									</div>
+									<a href="#" class="categories__btn btn btn--sm">أضف إلى السلة</a>
+								</article>
+								<article class="categories__item">
+									<button class="categories__like">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+										</svg>
+									</button>
+									<picture class="categories__img">
+										<img src="img/product-02.png" alt="Image">
+									</picture>
+									<div class="categories__body">
+										<div class="categories__prices">
+											<span class="categories__new-price">315د.ع</span>
+											<span class="categories__old-price">420 د.ع</span>
+											<span class="categories__discount">-40 %</span>
+										</div>
+										<a href="#" class="categories__title">Total Results</a>
+										<span class="categories__help">Unbreak My Blonde</span>
+									</div>
+									<a href="#" class="categories__btn btn btn--sm">أضف إلى السلة</a>
+								</article>
+								<article class="categories__item">
+									<button class="categories__like">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+										</svg>
+									</button>
+									<picture class="categories__img">
+										<img src="img/product-02.png" alt="Image">
+									</picture>
+									<div class="categories__body">
+										<div class="categories__prices">
+											<span class="categories__new-price">315د.ع</span>
+											<span class="categories__old-price">420 د.ع</span>
+											<span class="categories__discount">-40 %</span>
+										</div>
+										<a href="#" class="categories__title">Total Results</a>
+										<span class="categories__help">Unbreak My Blonde</span>
+									</div>
+									<a href="#" class="categories__btn btn btn--sm">أضف إلى السلة</a>
+								</article>
+								<article class="categories__item">
+									<button class="categories__like">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-like-filled"></use>
+										</svg>
+									</button>
+									<picture class="categories__img">
+										<img src="img/product-02.png" alt="Image">
+									</picture>
+									<div class="categories__body">
+										<div class="categories__prices">
+											<span class="categories__new-price">315د.ع</span>
+											<span class="categories__old-price">420 د.ع</span>
+											<span class="categories__discount">-40 %</span>
+										</div>
+										<a href="#" class="categories__title">Total Results</a>
+										<span class="categories__help">Unbreak My Blonde</span>
+									</div>
+									<a href="#" class="categories__btn btn btn--sm">أضف إلى السلة</a>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of categories -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
