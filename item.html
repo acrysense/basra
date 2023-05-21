@@ -33,7 +33,7 @@
 					</a>
 					<div class="header-search header__search">
 						<div class="header-search__wrapper">
-							<button class="c-catalog header-search__catalog">
+							<button class="c-catalog header-search__catalog" id="catalogue-trigger">
 								<svg>
 									<use xlink:href="img/sprite.svg#icon-catalog"></use>
 								</svg>
@@ -82,22 +82,431 @@
 							<a href="#" class="nav__link">اتصل بنا</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="nav__link">العلامات التجارية</a>
+							<a href="brands.html" class="nav__link">العلامات التجارية</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="nav__link">مخزون</a>
+							<a href="category.html" class="nav__link">مخزون</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="nav__link">الشحن والدفع</a>
+							<a href="shipping.html" class="nav__link">الشحن والدفع</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="nav__link">جهات الاتصال</a>
+							<a href="contacts.html" class="nav__link">جهات الاتصال</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<!-- end of header -->
+		<!-- catalogue -->
+		<div class="catalogue" id="catalogue">
+			<div class="container">
+				<div class="catalogue__wrap">
+					<div class="catalogue__wrapper">
+						<div class="catalogue__sort">
+							<button class="catalogue__current">العناية بالوجه</button>
+							<ul class="catalogue__tabs">
+								<li class="catalogue__item is--active">
+									<button class="catalogue__tab">العناية بالوجه</button>
+								</li>
+								<li class="catalogue__item">
+									<button class="catalogue__tab">العناية بالجسم</button>
+								</li>
+								<li class="catalogue__item">
+									<button class="catalogue__tab">ماكياج</button>
+								</li>
+								<li class="catalogue__item">
+									<button class="catalogue__tab">العطور</button>
+								</li>
+								<li class="catalogue__item">
+									<button class="catalogue__tab">للشعر</button>
+								</li>
+								<li class="catalogue__item">
+									<button class="catalogue__tab">مانيكير وباديكير</button>
+								</li>
+								<li class="catalogue__item">
+									<button class="catalogue__tab">للرجال</button>
+								</li>
+								<li class="catalogue__item">
+									<button class="catalogue__tab">للأطفال</button>
+								</li>
+							</ul>
+						</div>
+						<div class="catalogue__main">
+							<div class="catalogue__content is--active">
+								<div class="catalogue__holder">
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-01.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">تطهير</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-02.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الرعاية الأساسية</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-03.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">رعاية مكافحة الشيخوخة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-04.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">بقع</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-05.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الأمصال</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-06.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">أقنعة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-07.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">العناية بالشفاه</span>
+									</a>
+								</div>
+							</div>
+							<div class="catalogue__content">
+								<div class="catalogue__holder">
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-02.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الرعاية الأساسية</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-01.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">تطهير</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-03.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">رعاية مكافحة الشيخوخة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-04.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">بقع</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-05.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الأمصال</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-06.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">أقنعة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-07.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">العناية بالشفاه</span>
+									</a>
+								</div>
+							</div>
+							<div class="catalogue__content">
+								<div class="catalogue__holder">
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-03.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">رعاية مكافحة الشيخوخة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-01.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">تطهير</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-02.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الرعاية الأساسية</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-04.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">بقع</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-05.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الأمصال</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-06.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">أقنعة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-07.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">العناية بالشفاه</span>
+									</a>
+								</div>
+							</div>
+							<div class="catalogue__content">
+								<div class="catalogue__holder">
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-01.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">تطهير</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-05.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الأمصال</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-02.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الرعاية الأساسية</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-03.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">رعاية مكافحة الشيخوخة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-04.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">بقع</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-06.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">أقنعة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-07.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">العناية بالشفاه</span>
+									</a>
+								</div>
+							</div>
+							<div class="catalogue__content">
+								<div class="catalogue__holder">
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-01.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">تطهير</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-02.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الرعاية الأساسية</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-03.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">رعاية مكافحة الشيخوخة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-04.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">بقع</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-05.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الأمصال</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-06.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">أقنعة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-07.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">العناية بالشفاه</span>
+									</a>
+								</div>
+							</div>
+							<div class="catalogue__content">
+								<div class="catalogue__holder">
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-01.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">تطهير</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-04.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">بقع</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-05.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الأمصال</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-02.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الرعاية الأساسية</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-03.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">رعاية مكافحة الشيخوخة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-06.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">أقنعة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-07.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">العناية بالشفاه</span>
+									</a>
+								</div>
+							</div>
+							<div class="catalogue__content">
+								<div class="catalogue__holder">
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-01.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">تطهير</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-02.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الرعاية الأساسية</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-03.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">رعاية مكافحة الشيخوخة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-04.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">بقع</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-05.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الأمصال</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-06.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">أقنعة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-07.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">العناية بالشفاه</span>
+									</a>
+								</div>
+							</div>
+							<div class="catalogue__content">
+								<div class="catalogue__holder">
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-01.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">تطهير</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-03.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">رعاية مكافحة الشيخوخة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-02.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الرعاية الأساسية</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-04.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">بقع</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-05.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">الأمصال</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-06.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">أقنعة</span>
+									</a>
+									<a href="#" class="catalogue__holder-item">
+										<picture class="catalogue__img">
+											<img src="img/catalogue-07.jpg" alt="Image">
+										</picture>
+										<span class="catalogue__title">العناية بالشفاه</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end of catalogue -->
 		<!-- mobile menu -->
 		<div class="mobile-menu" id="mobile-menu">
 			<div class="mobile-menu__wrap">
@@ -383,7 +792,7 @@
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<article class="products__slide">
-											<a href="#" class="products__img">
+											<a href="item.html" class="products__img">
 												<img src="img/product-01.png" width="95" height="216" alt="Image">
 												<button class="products__like">
 													<svg>
@@ -397,7 +806,7 @@
 													<span class="products__old-price">420 د.ع</span>
 													<span class="products__discount">-25 %</span>
 												</div>
-												<a href="#" class="products__title">Total Results</a>
+												<a href="item.html" class="products__title">Total Results</a>
 												<span class="products__help">Unbreak My Blonde</span>
 											</div>
 											<a href="#" class="products__btn btn btn--sm btn--grey">أضف إلى العربة</a>
@@ -405,7 +814,7 @@
 									</div>
 									<div class="swiper-slide">
 										<article class="products__slide">
-											<a href="#" class="products__img">
+											<a href="item.html" class="products__img">
 												<img src="img/product-01.png" width="95" height="216" alt="Image">
 												<button class="products__like">
 													<svg>
@@ -419,7 +828,7 @@
 													<span class="products__old-price">420 د.ع</span>
 													<span class="products__discount">-25 %</span>
 												</div>
-												<a href="#" class="products__title">Total Results</a>
+												<a href="item.html" class="products__title">Total Results</a>
 												<span class="products__help">Unbreak My Blonde</span>
 											</div>
 											<a href="#" class="products__btn btn btn--sm">أضف إلى السلة</a>
@@ -427,7 +836,7 @@
 									</div>
 									<div class="swiper-slide">
 										<article class="products__slide">
-											<a href="#" class="products__img">
+											<a href="item.html" class="products__img">
 												<img src="img/product-01.png" width="95" height="216" alt="Image">
 												<button class="products__like">
 													<svg>
@@ -441,7 +850,7 @@
 													<span class="products__old-price">420 د.ع</span>
 													<span class="products__discount">-25 %</span>
 												</div>
-												<a href="#" class="products__title">Total Results</a>
+												<a href="item.html" class="products__title">Total Results</a>
 												<span class="products__help">Unbreak My Blonde</span>
 											</div>
 											<a href="#" class="products__btn btn btn--sm">أضف إلى السلة</a>
@@ -449,7 +858,7 @@
 									</div>
 									<div class="swiper-slide">
 										<article class="products__slide">
-											<a href="#" class="products__img">
+											<a href="item.html" class="products__img">
 												<img src="img/product-01.png" width="95" height="216" alt="Image">
 												<button class="products__like">
 													<svg>
@@ -463,7 +872,7 @@
 													<span class="products__old-price">420 د.ع</span>
 													<span class="products__discount">-25 %</span>
 												</div>
-												<a href="#" class="products__title">Total Results</a>
+												<a href="item.html" class="products__title">Total Results</a>
 												<span class="products__help">Unbreak My Blonde</span>
 											</div>
 											<a href="#" class="products__btn btn btn--sm">أضف إلى السلة</a>
@@ -471,7 +880,7 @@
 									</div>
 									<div class="swiper-slide">
 										<article class="products__slide">
-											<a href="#" class="products__img">
+											<a href="item.html" class="products__img">
 												<img src="img/product-01.png" width="95" height="216" alt="Image">
 												<button class="products__like">
 													<svg>
@@ -485,7 +894,7 @@
 													<span class="products__old-price">420 د.ع</span>
 													<span class="products__discount">-25 %</span>
 												</div>
-												<a href="#" class="products__title">Total Results</a>
+												<a href="item.html" class="products__title">Total Results</a>
 												<span class="products__help">Unbreak My Blonde</span>
 											</div>
 											<a href="#" class="products__btn btn btn--sm">أضف إلى السلة</a>
@@ -494,7 +903,7 @@
 								</div>
 							</div>
 						</div>
-						<a href="#" class="products__more products__more--mobile btn btn--border btn--sm">أضف إلى السلة</a>
+						<a href="category.html" class="products__more products__more--mobile btn btn--border btn--sm">أضف إلى السلة</a>
 					</div>
 				</div>
 			</section>
