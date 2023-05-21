@@ -27,14 +27,10 @@
 						<span class="hamburger__inner"></span>
 						<span class="hamburger__inner"></span>
 					</button>
-					<a href="#" class="header__logotype">
-						<img src="img/logotype.svg" width="263" height="46" alt="BASRA AMAZON">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" width="263" height="46" alt="BASRA AMAZON" class="header__logotype-black">
+						<img src="img/logotype-white.svg" width="263" height="46" alt="BASRA AMAZON" class="header__logotype-white">
 					</a>
-					<button class="c-search-trigger header__search-trigger">
-						<svg class="c-search-trigger__icon">
-							<use xlink:href="img/sprite.svg#icon-search"></use>
-						</svg>
-					</button>
 					<div class="header-search header__search">
 						<div class="header-search__wrapper">
 							<button class="c-catalog header-search__catalog">
@@ -56,21 +52,21 @@
 					<div class="header-controls header__controls">
 						<ul class="header-controls__list">
 							<li class="header-controls__item">
-								<a href="#" class="header-controls__link">
+								<a href="profile.html" class="header-controls__link">
 									<svg class="header-controls__icon">
 										<use xlink:href="img/sprite.svg#icon-user"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="header-controls__item">
-								<a href="#" class="header-controls__link">
+								<a href="favorites.html" class="header-controls__link">
 									<svg class="header-controls__icon">
 										<use xlink:href="img/sprite.svg#icon-like"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="header-controls__item">
-								<a href="#" class="header-controls__link">
+								<a href="basket.html" class="header-controls__link">
 									<svg class="header-controls__icon">
 										<use xlink:href="img/sprite.svg#icon-basket"></use>
 									</svg>
@@ -102,6 +98,91 @@
 			</div>
 		</header>
 		<!-- end of header -->
+		<!-- mobile menu -->
+		<div class="mobile-menu" id="mobile-menu">
+			<div class="mobile-menu__wrap">
+				<div class="header-search mobile-menu__search">
+					<div class="header-search__wrapper">
+						<button class="c-catalog header-search__catalog">
+							<span>فهرس</span>
+						</button>
+						<form action="#" class="header-search__controls">
+							<input type="text" class="header-search__input" placeholder="يبحث">
+							<button class="header-search__btn">
+								<svg class="header-search__btn-icon">
+									<use xlink:href="img/sprite.svg#icon-search"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+				<nav class="nav mobile-menu__nav">
+					<ul class="nav__list">
+						<li class="nav__item is--active">
+							<a href="#" class="nav__link">اتصل بنا</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">العلامات التجارية</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">مخزون</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">الشحن والدفع</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">جهات الاتصال</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="mobile-menu__contacts">
+					<div class="mobile-menu__block">
+						<p class="mobile-menu__info">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-phone"></use>
+							</svg>
+							<span>اتصل من 10:00 إلى 22:00</span>
+						</p>
+						<a href="tel:07807460690" class="mobile-menu__contact">07807460690</a>
+						<a href="tel:07703152690" class="mobile-menu__contact">07703152690</a>
+						<a href="tel:07715046655" class="mobile-menu__contact">07715046655</a>
+					</div>
+					<div class="mobile-menu__block">
+						<p class="mobile-menu__info">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-email"></use>
+							</svg>
+							<span>اكتب لنا:</span>
+						</p>
+						<a href="mailto:basraamazon@gmail.com" class="mobile-menu__contact">basraamazon@gmail.com</a>
+					</div>
+					<ul class="c-socnav mobile-menu__socnav">
+						<li class="c-socnav__item">
+							<a href="#" class="c-socnav__link">
+								<svg class="c-socnav__icon">
+									<use xlink:href="img/sprite.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="c-socnav__item">
+							<a href="#" class="c-socnav__link">
+								<svg class="c-socnav__icon">
+									<use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="c-socnav__item">
+							<a href="#" class="c-socnav__link">
+								<svg class="c-socnav__icon">
+									<use xlink:href="img/sprite.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end of mobile menu -->
 		<!-- content -->
 		<div class="wrapper__content">
 			<!-- brands -->
